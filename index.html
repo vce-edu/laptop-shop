@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Store - Vintech Computer Education</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="script.js"></script>
+
+    <!-- Favicons Start -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="VCE - Store" />
+<link rel="manifest" href="assets/favicon/site.webmanifest" />
+<!-- Favicons End -->
+</head>
+<body>
+    <section class="shop">
+        <header class="header">
+            <h1>Laptop Store</h1>
+            <a href="https://vintecheducation.org">
+            <p>Powered By VCE ↗</p>
+            </a>
+        </header>
+        <h1 class="easy-emi">Get Second Hand Laptops at 0% EMI</h1>
+        <div class="laptop-container">
+            <div class="top-box">
+                <div class="choose">
+                    <div class="heading">
+                <h1>Pick Your Laptop</h1></div>
+                <div class="sort">
+                <label for="sort">Sort By</label>
+                <select id="sort">
+        <option value="null">Default</option>
+        <option value="lowtohigh">Price (Low -> High)</option>
+      <option value="hightolow">Price (High -> Low)</option>
+      <option value="intel">Processor (Intel)</option>
+      <option value="ryzen">Processor (Ryzen)</option>
+      <option value="pothers">Processor (others)</option>
+      <option value="windows">O.S (windows)</option>
+      <option value="linux">O.S (linux)</option>
+      <option value="mac">O.S (mac)</option>
+      <option value="osothers">O.S (others)</option>
+    </select></div>
+</div>
+<div class="laptop-boxes">
+    <div class="loader">
+    <div id="shop-loader" class="shop-loader"></div>
+    <p class="no-message visible" id="loading">We are fetching your laptops, Please Wait ...</p>
+    <p class="no-message" id="message">At the moment, No Laptops were Found ...</p>
+    </div>
+    <div class="product-grid" id="laptops"></div>
+</div>
+        </div>
+        </div>
+        </div>
+        <footer class="credits">
+            <p>Created By <a href="https://mukundvishwa95.github.io">Mukund Vishwakarma</a></p>
+            <p>Child Entity of <a href="https://vintecheducation.org">Vintech Computer Education</a></p>
+            <p>&copy; 2025 Vintech Computer Education. All Rights Reserved.</p>
+        </footer>
+    </section>
+</body>
+</html>

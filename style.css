@@ -1,0 +1,266 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: white;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header h1 {
+  color: #640a64;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #640a64;
+  border-bottom: 1px dashed #640a64;
+  transition: color 0.2s ease;
+}
+
+.header p:hover {
+  color: #4b004b;
+}
+
+
+@media (max-width:480px){
+  .header{
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+}
+
+/* ===== HERO SECTION ===== */
+.easy-emi {
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #444;
+  background: linear-gradient(90deg, #f5e6fa, #f8f9fb);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ===== CONTAINER ===== */
+.laptop-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.top-box {
+  width: 92%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+}
+
+/* ===== TITLE + SORT ===== */
+.choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.choose h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #640a64;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+}
+
+.sort label {
+  font-weight: 500;
+  color: #666;
+  margin-right: 10px;
+}
+
+.sort select {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sort select:hover {
+  border-color: #640a64;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  display: none; 
+}
+
+/* ===== PRODUCT CARD ===== */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.price {
+  margin-bottom: 0.8rem;
+}
+
+.price .new {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #640a64;
+  background: #f5e6fa;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+/* ===== EMI BADGE ===== */
+.emi {
+  color: #27ae60;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* ===== BUTTON ===== */
+.product-card button {
+  background: #25d366;
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.product-card button:hover {
+  background: #1ebe5a;
+}
+
+
+.credits {
+  background: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+.credits a {
+  color: #640a64;
+  font-weight: 500;
+}
+
+
+/* LOADER */
+
+.shop-loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 30px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.no-message{
+  display: none;
+  text-align: center;
+  color: gray;
+}
+
+.no-message.visible{
+  display: block;
+}
